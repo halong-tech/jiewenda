@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomCameraView">
+            <rect key="frame" x="0.0" y="-1" width="350" height="631"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YI5-zD-Eak">
+                    <rect key="frame" x="0.0" y="567" width="350" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSU-VA-PoG">
+                            <rect key="frame" x="150" y="7" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="mDQ-hm-FL1"/>
+                                <constraint firstAttribute="height" constant="50" id="qH5-Vi-b6b"/>
+                            </constraints>
+                            <state key="normal" title="拍照">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wan-Nx-bfU">
+                            <rect key="frame" x="292" y="7" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Zfg-gM-Ths"/>
+                                <constraint firstAttribute="height" constant="50" id="iqz-5L-58S"/>
+                            </constraints>
+                            <state key="normal" title="相册">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDc-EA-3h8">
+                            <rect key="frame" x="8" y="7" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="PKv-j3-f20"/>
+                                <constraint firstAttribute="height" constant="50" id="asU-tI-eW4"/>
+                            </constraints>
+                            <state key="normal" title="退出">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.32830255681818177" green="0.32830255681818177" blue="0.32830255681818177" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="KDc-EA-3h8" secondAttribute="centerY" id="OEl-ny-AsF"/>
+                        <constraint firstAttribute="height" constant="64" id="WLF-tj-f9E"/>
+                        <constraint firstAttribute="centerY" secondItem="rSU-VA-PoG" secondAttribute="centerY" id="cyH-FM-wP1"/>
+                        <constraint firstAttribute="centerX" secondItem="rSU-VA-PoG" secondAttribute="centerX" id="eI1-9W-UF0"/>
+                        <constraint firstItem="KDc-EA-3h8" firstAttribute="leading" secondItem="YI5-zD-Eak" secondAttribute="leading" constant="8" id="mPf-zA-VWK"/>
+                        <constraint firstAttribute="trailing" secondItem="Wan-Nx-bfU" secondAttribute="trailing" constant="8" id="oz9-pQ-b7g"/>
+                        <constraint firstAttribute="centerY" secondItem="Wan-Nx-bfU" secondAttribute="centerY" id="vE6-Fg-R8L"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YI5-zD-Eak" secondAttribute="trailing" id="11p-F6-rCU"/>
+                <constraint firstItem="YI5-zD-Eak" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4Ue-H8-hFl"/>
+                <constraint firstAttribute="bottom" secondItem="YI5-zD-Eak" secondAttribute="bottom" id="D6i-eg-gV9"/>
+                <constraint firstAttribute="trailing" secondItem="YI5-zD-Eak" secondAttribute="trailing" id="Fuy-Ze-drc"/>
+                <constraint firstItem="YI5-zD-Eak" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aUN-br-Mfb"/>
+                <constraint firstAttribute="bottom" secondItem="YI5-zD-Eak" secondAttribute="bottom" id="hAp-Sn-Sq6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="11p-F6-rCU"/>
+                    <exclude reference="4Ue-H8-hFl"/>
+                    <exclude reference="D6i-eg-gV9"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="backActionBtn" destination="KDc-EA-3h8" id="hjc-Ey-1ks"/>
+                <outlet property="openPhotoBtn" destination="Wan-Nx-bfU" id="vJM-qF-jeL"/>
+                <outlet property="takePhoneBtn" destination="rSU-VA-PoG" id="AjS-cz-0mj"/>
+            </connections>
+            <point key="canvasLocation" x="200" y="212.5"/>
+        </view>
+    </objects>
+</document>

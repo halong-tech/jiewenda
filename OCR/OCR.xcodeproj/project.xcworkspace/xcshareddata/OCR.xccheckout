@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>239EDE7C-8FBC-408D-85F2-FB9A288CA14C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>OCR</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>64DA7F9454C150B49A7FD2BD7EF04463043C7A34</key>
+		<string>https://github.com/halong-tech/jiewenda.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>OCR/OCR.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>64DA7F9454C150B49A7FD2BD7EF04463043C7A34</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/halong-tech/jiewenda.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>64DA7F9454C150B49A7FD2BD7EF04463043C7A34</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>64DA7F9454C150B49A7FD2BD7EF04463043C7A34</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OCR</string>
+		</dict>
+	</array>
+</dict>
+</plist>

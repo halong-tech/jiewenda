@@ -334,6 +334,8 @@
 
     NSDictionary * params = @{@"techerId":techerId};
     [HttpTool requestWithMethod:RequestMethodTypeGet url:getTeacherInfoUrl params:params success:success failure:failure];
+    
+    NSLog(@"GIT");
 
 }
 

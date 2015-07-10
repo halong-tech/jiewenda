@@ -65,6 +65,10 @@
     _ipc.delegate = self;
     _ipc.showsCameraControls = NO;
     _customCameraView = [[CustomCameraView alloc]initWithCameraView];
+    
+    
+    NSArray * array = [_ipc.cameraOverlayView subviews];
+    
     _ipc.cameraOverlayView = _customCameraView;
     
     [self presentViewController:_ipc animated:YES completion:nil];
@@ -124,6 +128,8 @@
         }
         
     }
+    
+    
     
     //    跳转到下一个故事版
     UIStoryboard * searchTipicSB = [UIStoryboard storyboardWithName:@"SearchTopicStoryboard" bundle:nil];
